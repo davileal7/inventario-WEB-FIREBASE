@@ -20,7 +20,7 @@ function login() {
         form.email().value, form.password().value
     ).then(() => {
         hideLoad();
-        window.location.href ="/pages/home/index.html";
+        window.location.href ="/pages/home/home.html";
       }).catch(error => {
         hideLoad();
         alert(getErrorMessage(error))

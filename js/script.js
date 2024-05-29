@@ -1,6 +1,6 @@
 function logout() {
     firebase.auth().signOut().then(() => {
-        window.location.href = "/login_page.html"
+        window.location.href = "/index.html"
     }).catch(() => {
         alert("Erro ao fazer logOut")
     })
