@@ -20,7 +20,7 @@ function login() {
         form.email().value, form.password().value
     ).then(() => {
         hideLoad();
-        window.location.href ="/pages/home/home.html";
+        window.location.href ="home.html";
       }).catch(error => {
         hideLoad();
         alert(getErrorMessage(error))
@@ -38,7 +38,7 @@ if (error.code == "auth/wrong-password") {
 }
 
 function register() {
-    window.location.href = "/pages/register/register.html"
+    window.location.href = "register.html"
 }
 
 function recoverPassword() {
